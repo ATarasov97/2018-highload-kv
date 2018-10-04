@@ -37,5 +37,5 @@ application {
     mainClassName = "ru.mail.polis.Server"
 
     // And limit Xmx
-    applicationDefaultJvmArgs = listOf("-Xmx128m", "-Xverify:none")
+    applicationDefaultJvmArgs = listOf("-Xmx128m")
 }
