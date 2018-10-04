@@ -14,6 +14,10 @@ dependencies {
     // Annotations for better code documentation
     compile("com.intellij:annotations:12.0")
 
+    compile("org.mapdb:mapdb:3.0.5")
+
+    compile("ru.odnoklassniki:one-nio:1.0.2")
+
     // JUnit Jupiter test framework
     testCompile("org.junit.jupiter:junit-jupiter-api:5.3.1")
 
@@ -33,5 +37,5 @@ application {
     mainClassName = "ru.mail.polis.Server"
 
     // And limit Xmx
-    applicationDefaultJvmArgs = listOf("-Xmx128m")
+    applicationDefaultJvmArgs = listOf("-Xmx128m", "-Xverify:none")
 }
